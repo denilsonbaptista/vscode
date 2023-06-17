@@ -32,6 +32,9 @@
   "terminal.integrated.fontSize": 13,
   "terminal.integrated.defaultProfile.windows": "PowerShell",
 
+  // files
   "files.autoSave": "afterDelay",
+
+  // window
   "window.commandCenter": false
 }
