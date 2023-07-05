@@ -17,9 +17,10 @@
 
   // workbench
   "workbench.editor.enablePreview": false,
-  "workbench.iconTheme": "eq-material-theme-icons-palenight",
-  "workbench.colorTheme": "Rosé Pine Moon",
+  "workbench.iconTheme": "symbols",
   "workbench.layoutControl.enabled": false,
+  "workbench.colorTheme": "Min Dark",
+  "workbench.productIconTheme": "fluent-icons",
 
   // prettier
   "prettier.enable": true,
@@ -36,5 +37,11 @@
   "files.autoSave": "afterDelay",
 
   // window
-  "window.commandCenter": false
+  "window.commandCenter": false,
+
+  "figma.autocompleteBlocks": true,
+
+  "liveServer.settings.donotShowInfoMsg": true,
+
+  "symbols.hidesExplorerArrows": false
 }
