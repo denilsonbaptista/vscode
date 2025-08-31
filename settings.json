@@ -1,47 +1,150 @@
 {
-  // editor
-  "editor.fontFamily": "FiraCode Nerd Font Mono",
-  "editor.fontSize": 13,
-  "editor.wordWrap": "on",
+  "editor.wordWrap": "off",
   "editor.tabSize": 2,
-  "editor.bracketPairColorization.enabled": true,
   "editor.guides.bracketPairs": true,
   "editor.minimap.enabled": false,
-  "editor.formatOnSave": true,
   "editor.formatOnPaste": true,
-  "editor.renderWhitespace": "all",
-  "editor.defaultFormatter": "esbenp.prettier-vscode",
-
-  // explorer
+  "editor.formatOnType": true,
+  "formattingToggle.affects": ["formatOnSave"],
+  "editor.semanticHighlighting.enabled": false,
+  "editor.fontLigatures": true,
+  "editor.scrollbar.vertical": "hidden",
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": "explicit",
+    "source.fixAll.biome": "explicit",
+    "source.organizeImports.biome": "explicit"
+  },
+  "explorer.sortOrder": "foldersNestsFiles",
   "explorer.compactFolders": false,
-
-  // workbench
+  "explorer.fileNesting.enabled": true,
+  "explorer.fileNesting.patterns": {
+    "tailwind.config.*": "tailwind.config*, postcss.config*",
+    ".env.local": ".env*",
+    ".env": ".env*"
+  },
+  "[prisma]": {
+    "editor.formatOnSave": true,
+    "editor.defaultFormatter": "Prisma.prisma"
+  },
+  "typescript.suggest.autoImports": true,
+  "typescript.preferences.preferTypeOnlyAutoImports": true,
   "workbench.editor.enablePreview": false,
-  "workbench.iconTheme": "symbols",
-  "workbench.layoutControl.enabled": false,
-  "workbench.colorTheme": "Min Dark",
-  "workbench.productIconTheme": "fluent-icons",
-
-  // prettier
-  "prettier.enable": true,
-  "prettier.singleQuote": false,
-  "prettier.tabWidth": 2,
-  "prettier.semi": false,
-
-  // terminal
-  "terminal.integrated.fontFamily": "FiraCode Nerd Font Mono",
-  "terminal.integrated.fontSize": 13,
-  "terminal.integrated.defaultProfile.windows": "PowerShell",
-
-  // files
-  "files.autoSave": "afterDelay",
-
-  // window
-  "window.commandCenter": false,
-
-  "figma.autocompleteBlocks": true,
-
+  "terminal.integrated.fontFamily": "JetBrains Mono",
+  "terminal.integrated.defaultProfile.windows": "Git Bash",
   "liveServer.settings.donotShowInfoMsg": true,
-
-  "symbols.hidesExplorerArrows": false
+  "window.commandCenter": false,
+  "liveServer.settings.donotVerifyTags": true,
+  "editor.fontFamily": "JetBrains Mono",
+  "git.autofetch": true,
+  "javascript.updateImportsOnFileMove.enabled": "always",
+  "terminal.integrated.env.windows": {},
+  "editor.inlineSuggest.suppressSuggestions": true,
+  "prisma.showPrismaDataPlatformNotification": false,
+  "markdown-preview-github-styles.darkTheme": "dark_dimmed",
+  "markdown-preview-github-styles.lightTheme": "dark_dimmed",
+  "workbench.productIconTheme": "fluent-icons",
+  "cSpell.userWords": [
+    "autofetch",
+    "biomejs",
+    "contentlayer",
+    "datasource",
+    "dayjs",
+    "donot",
+    "encrypter",
+    "esbenp",
+    "fastify",
+    "geist",
+    "Hasher",
+    "ilike",
+    "lockb",
+    "nestjs",
+    "ocurred",
+    "originalname",
+    "Parens",
+    "Paulista",
+    "postgresql",
+    "quickfix",
+    "rocketseat",
+    "Sala",
+    "Sorocaba",
+    "tsup",
+    "unplugin",
+    "uuid"
+  ],
+  "cSpell.language": "en,pt,pt_BR",
+  "symbols.files.associations": {
+    "*.module.ts": "nest",
+    "*.guard.ts": "typescript",
+    "*.spec.ts": "ts-test",
+    "*.e2e-spec.ts": "ts-test",
+    "*.controller.ts": "typescript",
+    "*.service.ts": "nest",
+    "vitest.config.e2e.mts": "vitest",
+    "vitest.config.e2e.ts": "vitest",
+    ".env.example": "gear"
+  },
+  "symbols.folders.associations": {
+    "controller": "",
+    "controllers": ""
+  },
+  "tailwindCSS.classFunctions": ["cva", "cx", "cn"],
+  "editor.formatOnSave": true,
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "prettier.printWidth": 80,
+  "prettier.tabWidth": 2,
+  "prettier.useTabs": false,
+  "prettier.semi": false,
+  "prettier.singleQuote": true,
+  "prettier.quoteProps": "as-needed",
+  "prettier.jsxSingleQuote": false,
+  "prettier.trailingComma": "es5",
+  "prettier.bracketSpacing": true,
+  "prettier.arrowParens": "always",
+  "prettier.endOfLine": "auto",
+  "prettier.bracketSameLine": false,
+  "editor.accessibilitySupport": "on",
+  "accessibility.signalOptions.volume": 0,
+  "git.openRepositoryInParentFolders": "never",
+  "chat.commandCenter.enabled": false,
+  "workbench.colorCustomizations": {
+    "[Kanso Ink]": {
+      "activityBar.background": "#15171c",
+      "tab.activeBorderTop": "#15171c",
+      "sideBar.border": "#222732"
+    },
+    "[Rosé Pine Moon]": {
+      "sideBar.border": "#393845"
+    },
+    "[Vesper ++]": {
+      "tab.activeBorderTop": "default"
+    }
+  },
+  "window.titleBarStyle": "custom",
+  "makefile.configureOnOpen": true,
+  "redhat.telemetry.enabled": true,
+  "workbench.iconTheme": "symbols",
+  "workbench.statusBar.visible": false,
+  "glassit.alpha": 250,
+  "remote.autoForwardPortsSource": "hybrid",
+  "diffEditor.codeLens": true,
+  "chat.instructionsFilesLocations": {
+    ".github/instructions": true,
+    "/tmp/postman-collections-post-response.instructions.md": true,
+    "/tmp/postman-collections-pre-request.instructions.md": true,
+    "/tmp/postman-folder-post-response.instructions.md": true,
+    "/tmp/postman-folder-pre-request.instructions.md": true,
+    "/tmp/postman-http-request-post-response.instructions.md": true,
+    "/tmp/postman-http-request-pre-request.instructions.md": true,
+    "C:\\Users\\denil\\AppData\\Local\\Temp\\postman-collections-post-response.instructions.md": true,
+    "C:\\Users\\denil\\AppData\\Local\\Temp\\postman-collections-pre-request.instructions.md": true,
+    "C:\\Users\\denil\\AppData\\Local\\Temp\\postman-folder-post-response.instructions.md": true,
+    "C:\\Users\\denil\\AppData\\Local\\Temp\\postman-folder-pre-request.instructions.md": true,
+    "C:\\Users\\denil\\AppData\\Local\\Temp\\postman-http-request-post-response.instructions.md": true,
+    "C:\\Users\\denil\\AppData\\Local\\Temp\\postman-http-request-pre-request.instructions.md": true
+  },
+  "[javascript]": {
+    "editor.defaultFormatter": "biomejs.biome"
+  },
+  "workbench.activityBar.location": "hidden",
+  "workbench.colorTheme": "Vesper ++"
 }
